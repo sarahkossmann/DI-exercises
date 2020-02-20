@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+//Exercise 1
+
+		var me = ["my","favorite","color","is","blue"]
+		var sentence= me.join();
+		console.log(sentence)
+
+
+//Exercise 2
+
+		var str1 = "mix "
+		var str2 = "pod"
+		var strings = str1.concat(str2);
+		console.log(strings) //mix pod
+		var strings2 = str1.slice(0)
+		console.log(strings2)
+		var strings3 = str2.slice(0)
+		console.log(strings3)
+		var strings4 = strings2+strings3
+		console.log(strings4)
+		var strings4 = strings4.replace('x','*').replace('x','d').replace('*','d')
+		console.log(strings4)
+
+//Exercise 3
+		var str = 'heling'
+		 if (str.endsWith('ing')){
+			console.log(str+'ly');
+		}
+		else if (str.length>=3){
+			console.log(str+'ing');
+		}
+		else if (str.length<3){
+			console.log(str);
+		}
+		
+//Exercice 4
+		var string = 'i am not a bad person'
+		var n = string.indexOf("not")
+		console.log(n) //5
+		var m = string.indexOf("bad")
+		console.log(m)//11
+		var o = string.substring (0,5)
+		var p = string.substring (14, string.length)
+		//if m follows n, ...
+		if (m>n) {
+			console.log(o+"good"+p)
+		}
+		else {
+			console.log(string)
+		}
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

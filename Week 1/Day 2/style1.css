@@ -1,0 +1,50 @@
+.class {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+
+}
+.class:hover {
+  opacity: 0.1;
+}
+  .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-facebook:hover{
+	opacity: 0.5;
+}
+.fa-phone-square{
+	width: 10px;
+	color: blue;
+}
+.fa-phone-square:hover{
+opacity: 0.5;
+}
+.fa-at:hover{
+	opacity: 0.5;
+}
+.fa-user:hover{
+	opacity: 0.5;
+}
+.fa-linkedin{
+	color: #0e76a8;
+	size: 50px 50px;
+}
+.fa-linkedin:hover{
+	opacity: 0.5;
+}
+img{
+	size: cover;
+}
+h2{
+	color: black;
+}
+title{
+	border-style: solid black;
+}
+li{
+text-align: justify; 
+}

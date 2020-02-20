@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "name": "Red wine",
+        "price": 25,
+        "instock": 3,
+        "image": "x"
+    },
+    {
+        "id": 1,
+        "name": "Penne Pasta",
+        "price": 3,
+        "instock": 3,
+        "image": "x"
+    },
+    {
+        "id": 2,
+        "name": "Parmesan Cheese",
+        "price": 4,
+        "instock": 3,
+        "image": "x"
+    }
+]

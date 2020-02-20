@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+
+		const aWord = 'javascript';
+		console.log(aWord);
+		let wordArr = aWord.split('');
+		console.log(wordArr);
+		let arrToShow = [];
+		const numOf = 10
+
+		for (var i = 0; i < wordArr; i++) {
+			if (i == 0){
+				arrToShow.push(wordArr[i]);
+			}
+			else if (i == wordArr.length-1){
+				arrToShow.push(wordArr[i]);
+			}
+			else {
+				arrToShow.push('*');
+			}
+			
+		}
+		console.log(arrToShow);
+
+
+		for (let i = 0; i < numOf; i++) {
+			let g = prompt('Please enter a word');
+			if(g.length <= 1){
+				for (let j = 0; j <wordArr.length; j++) {
+				if (wordArr[j].toLowerCase() == g.toLowerCase()){
+					arrToShow[j] = wordArr[i];
+			}
+			
+				}
+			}	console.log(arrToShow.join(''));
+			
+			if (aWord == arrToShow[j].join('')){
+				console.log('WON');
+			}
+		}
+
+// // const MYWORD = 'Jason';
+// const NUMOF = 10;
+// let wordArr = MYWORD.split('');
+// let arrToShow = [];
+// for (var i = 0; i < wordArr.length; i++) {
+//   if(i == 0 || i == wordArr.length-1){
+//     arrToShow.push(wordArr[i]);
+//   }
+//   else {
+//     arrToShow.push('*');
+//   }
+// }
+// alert(arrToShow.join(''));
+// for (let i = 0; i < 10; i++) {
+//   let g = prompt('Please enter a something');
+//   if(g.length <= 1){
+//     for (let j = 0; j < wordArr.length; j++) {
+//       let gg = g.toLowerCase();
+//       let ww = wordArr[j].toLowerCase();
+//       if (wordArr[j].toLowerCase() == g.toLowerCase()) {
+//         arrToShow[j] = wordArr[j];
+//       }
+//     }
+//     console.log(arrToShow.join(''));
+//     if(MYWORD == arrToShow.join('')){
+//       console.log('WON');
+//       break;
+//     }
+//   }
+// }
+	</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>

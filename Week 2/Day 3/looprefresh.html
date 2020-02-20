@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+
+	//EX1
+		// var color=['blue','red','yellow','green']
+		// var i=0
+
+		// for (i = 0 ; i < color.length; i++) {
+		
+		// 		console.log('My #' + (color.indexOf(color[i])+1) + ' color is '+ color[i]);
+				
+		// 		}
+
+
+	//EX2
+
+// 	var num =Number(prompt('what is your number?'))
+	
+
+// 	while (num < 10){
+
+// 	var num=Number(prompt('try with a new number'))
+
+// 	num++
+// }
+
+	//EX3
+
+	//1 
+	var people = ['Greg','Mary','Devon','James']
+	var i=0
+	// for (var i = 0; i < people.length; i++) {
+	// 	console.log(people[i])
+	// }
+	// //2
+	// people.shift()
+	// console.log(people)
+	// //3
+	// people[2] = "Jason"
+	// console.log(people)
+	// //4
+	// people.splice(people.length, 0,"Sarah")
+	// console.log(people)
+	// // //5 iterate the array with the condition of console loging 'mary' to end iteration 
+	// // for ( var i = 0; i < 2 ; i++) {
+	// // 	console.log(people[i]);
+	// // }
+	// //6
+	// console.log(people.slice(1,people.length-1))
+	//7
+	// console.log(people.indexOf('Mary'))
+	//8
+	// console.log(people.indexOf('Foo'))
+
+	//EX4
+	var age = [20,5,12,43,98,55]
+	//1
+	// var sum = age.reduce(function(a, b){
+	// 	return a + b;
+	// }, 0);
+	// console.log(sum);
+	//2 
+	// for (var i = 0 ; i < age.length; i++) 
+	// {
+	// // 	if (age[i]%2==0){
+	// // 	console.log(age[i]);
+	// // }
+	// }
+	
+	//3
+	var temp;
+		for (var i = 0 ; i < age.length; i++) {
+
+			for (var j = i; j < age.length; j++) {
+				if (age[j]>age[i]) {
+					temp=age[i];
+					age[i]=age[j];
+					age[j]=age[j-1];
+					age[j]=temp;
+
+		}
+
+	}
+
+}
+console.log(age[0])
+
+	// var max = age.reduce(function(a, b) {
+	// console.log(Math.max(a, b));})
+
+	</script>
+	
+</head>
+<body>
+
+</body>
+</html>

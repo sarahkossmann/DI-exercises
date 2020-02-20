@@ -1,0 +1,32 @@
+.container{
+	flex-direction: column;
+}
+.item{
+	flex-direction: column;
+}
+
+h1{
+	text-align: center;
+}
+.jumbotron{
+	background-image: url(https://images.pexels.com/photos/530024/pexels-photo-530024.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background-image: cover;
+}
+.btn-primary{
+	text-align: center;
+	padding: 12px 28px;
+	background-color:blue;
+	color: black;
+	border:2px solid blue;
+	font-size: 12px;
+	border-radius: 2px;
+	opacity: 0.7;
+}
+.btn-secondary{
+	text-align: center;
+	padding: 12px 28px;
+	background-color: transparent;
+	font-size: 12px;
+	border-radius: 12px;
+	border:2px solid white;
+}
