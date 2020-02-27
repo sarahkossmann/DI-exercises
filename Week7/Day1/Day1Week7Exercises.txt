@@ -1,0 +1,26 @@
+SELECT * FROM students;
+SELECT first_name, last_name FROM students;
+SELECT first_name, last_name FROM students WHERE id = 2;
+SELECT first_name, last_name FROM students WHERE last_name = "Dupont" AND first_name = "Marc";
+SELECT first_name, last_name FROM students WHERE last_name = "Dupont" OR first_name = "Marc";
+SELECT first_name, last_name FROM students WHERE first_name like "%a%";
+SELECT first_name, last_name FROM students WHERE first_name like "A%";
+SELECT first_name, last_name FROM students WHERE first_name like "%a";
+SELECT first_name, last_name FROM students WHERE substr(first_name, 2, 1) = "a";
+SELECT first_name, last_name FROM students WHERE id = 1 or id = 3;
+SELECT first_name, last_name, birth_date FROM students WHERE birth_date > "2000%";
+SELECT first_name, last_name FROM students WHERE id = 1 or id = 2 or id = 3 or id = 4 ORDER by last_name;
+SELECT first_name, last_name, birth_date FROM students ORDER BY birth_date DESC LIMIT 1;
+UPDATE students SET first_name = "Lea" WHERE first_name = "lea";
+UPDATE students SET birth_date = "1998-02-11" WHERE last_name = "Dupont";
+DELETE FROM students WHERE id = 5;
+SELECT count(first_name) FROM students;
+SELECT count(first_name) FROM students WHERE birth_date > "2000%";
+ALTER TABLE students ADD math_grade varchar(3);
+UPDATE students SET math_grade = 80 WHERE id = 1
+UPDATE students SET math_grade = 90 WHERE id = 2 or id = 4;
+UPDATE students SET math_grade = 100 WHERE id = 6;
+SELECT count(math_grade) FROM students WHERE math_grade > 83;
+INSERT INTO students (first_name, last_name, birth_date, math_grade) VALUES ("Omer", "Simpson", "1980-03-10 00:00:00", 10);
+SELECT math_grade as total_grades FROM students;
+SELECT sum(math_grade) FROM students
