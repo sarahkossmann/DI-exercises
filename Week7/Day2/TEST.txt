@@ -1,0 +1,25 @@
+SELECT * FROM public.actor;
+SELECT * FROM public.actor WHERE last_name like '%an%';
+SELECT count(*) from actor;
+select max(first_name) from actor where first_name like '%an%';
+select avg(amount), max(amount), min(amount) from payment where amount >=2;
+select last_name, count(first_name) from actor group by last_name;
+select last_name, count(first_name) from actor group by last_name having last_name like '%a%';
+select last_name, count(first_name) as mycount from actor group by last_name having count(first_name) >=2;
+select film_id, title, language_id from film;
+select film.language_id, title, name from film join language on film.language_id=language.language_id;
+select title, first_name, last_name from film join film_actor on film.film_id = film_actor.film_id join actor on film_actor.actor_id = actor.actor_id
+
+select title, description, language.name from film join language on film.language_id = language.language_id;
+
+
+select * from language;
+select rating, title from film where rating = 'PG-13' or rating = 'G';
+select rating, count(title) as mycount from film group by film.rating having count(title) >=1;
+select rental_rate, length from film;
+select title, rental_rate, length from film where length < 120 and rental_rate < 3.00 order by title;
+select * from customer;
+update customer SET first_name = 'Sarah' where customer_id = 1;
+select * from customer;
+
+
